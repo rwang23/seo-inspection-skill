@@ -1,0 +1,4 @@
+# Example URLs for batch inspection. Replace these with URLs from your own verified Search Console property.
+https://example.com/missing-page
+https://example.com/fr/de/search
+https://example.com/web-pixels@sample/custom/web-pixel-example/sandbox/modern/page

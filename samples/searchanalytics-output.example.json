@@ -1,0 +1,29 @@
+{
+  "command": "searchanalytics-query",
+  "site_url": "sc-domain:example.com",
+  "request": {
+    "startDate": "2026-01-01",
+    "endDate": "2026-01-31",
+    "dimensions": ["query", "page"],
+    "rowLimit": 3,
+    "startRow": 0
+  },
+  "result": {
+    "rows": [
+      {
+        "keys": ["pet bed", "https://example.com/products/pet-bed"],
+        "clicks": 120,
+        "impressions": 5400,
+        "ctr": 0.0222,
+        "position": 8.4
+      },
+      {
+        "keys": ["cat window perch", "https://example.com/products/cat-window-perch"],
+        "clicks": 74,
+        "impressions": 2600,
+        "ctr": 0.0285,
+        "position": 6.1
+      }
+    ]
+  }
+}

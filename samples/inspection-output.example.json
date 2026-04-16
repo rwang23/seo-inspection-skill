@@ -1,0 +1,61 @@
+{
+  "site_url": "sc-domain:example.com",
+  "credentials": "/absolute/path/to/credential/google-service-account.json",
+  "config_sources": {
+    "skill_env": "/path/to/gsc-inspection/.env",
+    "root_env": "/path/to/project/.env"
+  },
+  "property_access": {
+    "site_url": "sc-domain:example.com",
+    "matched_entries": [
+      {
+        "siteUrl": "sc-domain:example.com",
+        "permissionLevel": "siteFullUser"
+      }
+    ]
+  },
+  "inspected_count": 3,
+  "results": [
+    {
+      "url": "https://example.com/missing-page",
+      "classification": "not_found_without_referrer",
+      "classification_rationale": "404 with no referring URL returned by the Inspection API.",
+      "verdict": "NEUTRAL",
+      "coverageState": "Not found (404)",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "pageFetchState": "NOT_FOUND",
+      "lastCrawlTime": "2026-01-01T00:00:00Z",
+      "referringUrls": [],
+      "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:example.com&id=example"
+    },
+    {
+      "url": "https://example.com/fr/de/search",
+      "classification": "historical_malformed_multilang_404",
+      "classification_rationale": "Malformed URL contains repeated locale segments. Often caused by historical locale-path concatenation bugs.",
+      "verdict": "NEUTRAL",
+      "coverageState": "Not found (404)",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "pageFetchState": "NOT_FOUND",
+      "lastCrawlTime": "2026-01-01T00:00:00Z",
+      "referringUrls": [
+        "https://example.com/de/search?q=%7Bquery%7D"
+      ],
+      "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:example.com&id=example"
+    },
+    {
+      "url": "https://example.com/web-pixels@sample/custom/web-pixel-example/sandbox/modern/page",
+      "classification": "shopify_internal_robots_block",
+      "classification_rationale": "Internal platform pixel or sandbox URL. Usually expected to be disallowed by robots rules.",
+      "verdict": "NEUTRAL",
+      "coverageState": "Blocked by robots.txt",
+      "robotsTxtState": "DISALLOWED",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "pageFetchState": "BLOCKED_ROBOTS_TXT",
+      "lastCrawlTime": "2026-01-01T00:00:00Z",
+      "referringUrls": [],
+      "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:example.com&id=example"
+    }
+  ]
+}

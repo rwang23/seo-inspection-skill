@@ -1,0 +1,25 @@
+{
+  "command": "sitemaps-list",
+  "site_url": "sc-domain:example.com",
+  "result": {
+    "sitemap": [
+      {
+        "path": "https://example.com/sitemap.xml",
+        "lastSubmitted": "2026-01-01T00:00:00.000Z",
+        "isPending": false,
+        "isSitemapsIndex": true,
+        "type": "WEB",
+        "lastDownloaded": "2026-01-02T00:00:00.000Z",
+        "warnings": "0",
+        "errors": "0",
+        "contents": [
+          {
+            "type": "web",
+            "submitted": "1200",
+            "indexed": "1100"
+          }
+        ]
+      }
+    ]
+  }
+}

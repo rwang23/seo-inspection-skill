@@ -1,0 +1,7 @@
+.env
+credential/
+temp/
+outputs/
+__pycache__/
+*.pyc
+*.log
