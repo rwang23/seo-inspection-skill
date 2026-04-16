@@ -1,5 +1,7 @@
 # gsc-inspection
 
+[中文文档](README.zh-CN.md)
+
 Reusable Google Search Console URL Inspection skill for debugging indexing, crawl, and `robots.txt` issues with evidence from the Search Console API instead of guesswork.
 
 ## What this skill includes
