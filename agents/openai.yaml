@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Inspection"
+  short_description: "Inspect GSC and GA4 evidence for SEO decisions."
+  default_prompt: "Use Search Console and GA4 evidence to inspect this SEO issue and recommend the next action."

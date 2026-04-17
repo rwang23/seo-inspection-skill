@@ -1,8 +1,8 @@
-{
+﻿{
   "site_url": "sc-domain:example.com",
   "credentials": "/absolute/path/to/credential/google-service-account.json",
   "config_sources": {
-    "skill_env": "/path/to/gsc-inspection/.env",
+    "skill_env": "/path/to/seo-inspection/.env",
     "root_env": "/path/to/project/.env"
   },
   "property_access": {
